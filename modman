@@ -1,1 +1,5 @@
 # modman mappings will go here
+code                    app/code/local/Bazmod/Securemysql
+adminhtml/layout/*      app/design/adminhtml/default/default/layout/
+adminhtml/template      app/design/adminhtml/default/default/template/securemysql
+Bazmod_SecureMysql.xml  app/etc/modules/Bazmod_SecureMysql.xml

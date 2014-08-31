@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <system>
+            <groups>
+                <securemysql translate="label" module="securemysql">
+                    <label>Secure MySQL Settings</label>
+                    <comment><![CDATA[To encrypt your connection to MySQL, you'll need to edit your app/etc/local.xml file to use a
+                    different DB adapter and point to the necessary certificate files. If you don't wish to be notified of an unencrypted connection, toggle the
+                    setting below.]]></comment>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>999</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <warningenabled translate="label comment">
+                            <label>Show warning</label>
+                            <comment><![CDATA[Toggles whether the extension will add a warning notice to admin screens when the connection is unencrypted.]]></comment>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </warningenabled>
+                    </fields>
+                </securemysql>
+            </groups>
+        </system>
+    </sections>
+</config>

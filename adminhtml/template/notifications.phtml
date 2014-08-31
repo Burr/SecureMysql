@@ -1,0 +1,11 @@
+<?php
+/** Bazmod_SecureMysql_Block_Adminhtml_Notifications $this */
+?>
+<?php if($this->showWarning()):?>
+    <div class="notification-global">
+        <strong><?php echo $this->__('Connection to MySQL is not encrypted.') ?></strong>
+        <?php echo $this->__(
+            'Click <a href="%s">Secure MySQL configuration</a> to learn how to resolve the problem, or to turn off this warning.'
+            , $this->getUrl('*/system_config/edit', array('section' => 'system')));?>
+    </div>
+<?php endif;?>

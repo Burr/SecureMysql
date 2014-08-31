@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<layout>
+    <default>
+        <reference name="notifications">
+            <block type="securemysql/adminhtml_notifications" name="securemysql_notifications" template="securemysql/notifications.phtml" />
+        </reference>
+    </default>
+</layout>

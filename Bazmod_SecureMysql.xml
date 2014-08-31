@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Bazmod_SecureMysql>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Bazmod_SecureMysql>
+    </modules>
+</config>
